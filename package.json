@@ -1,0 +1,15 @@
+{
+  "name": "confconv",
+  "version": "1.0.0",
+  "description": "Config file format converter CLI tool",
+  "main": "confconv.js",
+  "bin": {
+    "confconv": "./confconv.js"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}

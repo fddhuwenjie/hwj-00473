@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <description>This is a multi-line
+description for the application config.</description>
+  <app>
+    <name>My Application</name>
+    <version>2.1.0</version>
+    <debug>true</debug>
+    <port>8080</port>
+    <rate_limit>3.14</rate_limit>
+    <release_date>2024-06-15T10:30:00.000Z</release_date>
+  </app>
+  <database>
+    <host>localhost</host>
+    <port>5432</port>
+    <name>myapp_db</name>
+    <credentials>
+      <username>admin</username>
+      <password>s3cr3t</password>
+    </credentials>
+    <options ssl="true" pool_size="20" timeout="30"/>
+  </database>
+  <servers>
+    <name>primary</name>
+    <host>server1.example.com</host>
+    <port>443</port>
+  </servers>
+  <servers>
+    <name>secondary</name>
+    <host>server2.example.com</host>
+    <port>443</port>
+  </servers>
+  <features>auth</features>
+  <features>logging</features>
+  <features>caching</features>
+  <features>rate_limit</features>
+</config>

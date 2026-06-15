@@ -1,0 +1,39 @@
+# Application configuration
+description = """
+This is a multi-line
+description for the application config.
+"""
+
+[app]
+name = "My Application"
+version = "2.1.0"
+debug = true
+port = 8080
+rate_limit = 3.14
+release_date = 2024-06-15T10:30:00Z
+
+[database]
+host = "localhost"
+port = 5432
+name = "myapp_db"
+
+[database.credentials]
+username = "admin"
+password = "s3cr3t"
+
+[database.options]
+ssl = true
+pool_size = 20
+timeout = 30
+
+features = ["auth", "logging", "caching", "rate_limit"]
+
+[[servers]]
+name = "primary"
+host = "server1.example.com"
+port = 443
+
+[[servers]]
+name = "secondary"
+host = "server2.example.com"
+port = 443
